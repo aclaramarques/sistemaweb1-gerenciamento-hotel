@@ -1,0 +1,14 @@
+
+<div class="container" style="max-width: 500px; margin-top: 40px;">
+    <h2 class="text-center">Cadastrar Serviço adicional</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+
+        <button type="submit" class="btn btn-success" style="text-align: right;">Salvar</button>
+    </form>
+</div>
