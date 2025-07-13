@@ -1,7 +1,7 @@
-from django import path
+from django.urls import path
 from . import views
 
-urlPatterns = [
+urlpatterns = [
     path('hospedes/', views.listar_hospedes, name='listar_hospedes'),
     path('novo/', views.cadastrar_hospede, name='cadastrar_hospede'),
     path('editar/<int:id>/', views.editar_hospede, name='editar_hospede'),
