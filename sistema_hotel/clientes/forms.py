@@ -4,4 +4,4 @@ from .models import Hospede
 class HospedeForm(forms.ModelForm):
     class Meta:
         model = Hospede
-        fields = ['nome', 'telefone', 'dataNasc']
+        fields = ['nome', 'telefone']

@@ -1,9 +1,9 @@
 from django.db import models
 
 class Quarto(models.Model):
-    numero = models.IntegerField(max_length=3, unique=True)
+    numero = models.IntegerField(unique=True)
     tipo = models.CharField(max_length=50)
-    capacidade = models.IntegerField(max_length=2)
+    capacidade = models.IntegerField()
     disponibilidade = models.BooleanField(default=True)
     preco_diaria = models.DecimalField(max_digits=8, decimal_places=2)
 

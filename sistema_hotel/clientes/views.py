@@ -12,8 +12,8 @@ def cadastrar_hospede(request):
         if form.is_valid():
             form.save()
             return redirect('listar_hospedes')
-        else:
-            form = HospedeForm()
+    else:
+        form = HospedeForm()
     return render(request, 'hospedes/form.html', {'form': form})
 
 def editar_hospede(request, id):
