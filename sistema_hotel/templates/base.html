@@ -90,19 +90,40 @@
                 </div>
             </li>
 
+<<<<<<< HEAD
              <!-- Nav Item - Utilities Collapse Menu -->
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFuncionarios"
                     aria-expanded="true" aria-controls="collapseFuncionarios">
                     <i class="fas fa-user-tie"></i> 
                     <span>Funcionários</span>
+=======
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReserva"
+                    aria-expanded="true" aria-controls="collapseReserva">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Reserva</span>
+>>>>>>> b9e214e1ec3b15f527e93ae9c39ffcbec870a215
                 </a>
-                <div id="collapseFuncionarios" class="collapse" aria-labelledby="headingFuncionarios"
-                    data-parent="#accordionSidebar">
+                <div id="collapseReserva" class="collapse" aria-labelledby="headingReserva" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Opções de quartos:</h6>
-                        <a class="collapse-item" href="{% url 'criar_funcionario' %}">Cadastrar funcionários</a>
-                        <a class="collapse-item" href="{% url 'listar_funcionarios' %}">Listar funcionários</a>
+                        <h6 class="collapse-header">Opções de reserva:</h6>
+                        <a class="collapse-item" href="{% url 'cadastrar_reserva' %}">Cadastrar reserva</a>
+                        <a class="collapse-item" href="{% url 'listar_reservas' %}">Listar reserva</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagamento"
+                    aria-expanded="true" aria-controls="collapsePagamento">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>Pagamentos</span>
+                </a>
+                <div id="collapsePagamento" class="collapse" aria-labelledby="headingPagamento" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de pagamento:</h6>
+                        <a class="collapse-item" href="">Listar pagamento</a>
                     </div>
                 </div>
             </li>

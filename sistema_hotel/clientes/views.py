@@ -16,15 +16,15 @@ def cadastrar_hospede(request):
         form = HospedeForm()
     return render(request, 'hospedes/form.html', {'form': form})
 
-def editar_hospede(request, id):
-    hospede = get_object_or_404(Hospede, id=id)
+def editar_hospede(request, cpf):
+    hospede = get_object_or_404(Hospede, cpf=cpf)
     form = HospedeForm(request.POST or None, instance=hospede)
     if form.is_valid():
         form.save()
         return redirect('listar_hospedes')
     return render(request, 'hospedes/form.html', {'form': form})
 
-def deletar_hospede(request, id):
-    hospede = get_object_or_404(Hospede, id=id)
+def deletar_hospede(request, cpf):
+    hospede = get_object_or_404(Hospede, cpf=cpf)
     hospede.delete()
     return redirect('listar_hospedes')

@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('funcionarios.urls')),
     path('', include('clientes.urls')),
     path('', include('quartos.urls')),
+    path('', include('reservas.urls')),
     path('', include('core.urls')),
 ]
 
