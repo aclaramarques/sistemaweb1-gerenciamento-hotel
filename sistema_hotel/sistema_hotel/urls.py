@@ -28,4 +28,3 @@ urlpatterns = [
     path('', include('reservas.urls')),
     path('', include('core.urls')),
 ]
-

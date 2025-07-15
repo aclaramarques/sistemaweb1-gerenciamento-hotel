@@ -30,7 +30,7 @@
         <td>{{ reserva.valor_total }}</td>
         <td>
           <a href="{% url 'editar_reserva' reserva.id %}" class="btn btn-warning btn-sm">Editar</a>
-          <a href="{% url 'deletar_reserva' reserva.id %}" class="btn btn-danger btn-sm">Excluir</a>
+          <a href="{% url 'deletar_reserva' reserva.id %}" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja excluir esta reserva?')">Excluir</a>
         </td>
       </tr>
       {% empty %}

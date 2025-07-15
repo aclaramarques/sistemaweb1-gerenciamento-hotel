@@ -133,4 +133,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/accounts/login'
-LOGIN_REDIRECT_URL = 'index.html'
+LOGIN_REDIRECT_URL = 'listar_tudo'
