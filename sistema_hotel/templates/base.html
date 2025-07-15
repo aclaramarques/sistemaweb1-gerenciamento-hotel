@@ -90,6 +90,35 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReserva"
+                    aria-expanded="true" aria-controls="collapseReserva">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Reserva</span>
+                </a>
+                <div id="collapseReserva" class="collapse" aria-labelledby="headingReserva" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de reserva:</h6>
+                        <a class="collapse-item" href="{% url 'cadastrar_reserva' %}">Cadastrar reserva</a>
+                        <a class="collapse-item" href="{% url 'listar_reservas' %}">Listar reserva</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagamento"
+                    aria-expanded="true" aria-controls="collapsePagamento">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>Pagamentos</span>
+                </a>
+                <div id="collapsePagamento" class="collapse" aria-labelledby="headingPagamento" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de pagamento:</h6>
+                        <a class="collapse-item" href="">Listar pagamento</a>
+                    </div>
+                </div>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
 

@@ -1,7 +1,7 @@
 from django.db import models
 
 class Quarto(models.Model):
-    numero = models.IntegerField(unique=True)
+    numero = models.IntegerField(unique=True, primary_key=True)
     tipo = models.CharField(max_length=50)
     capacidade = models.IntegerField()
     disponibilidade = models.BooleanField(default=True)
