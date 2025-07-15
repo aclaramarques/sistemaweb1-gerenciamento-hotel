@@ -13,7 +13,7 @@
     <title>Gerenciador de Hotel</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -23,7 +23,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top d-flex flex-column min-vh-100">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -151,7 +151,7 @@
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
-            <div id="content">
+            <main id="content" class="flex-fill">
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -238,12 +238,12 @@
                 
                 <!-- /.container-fluid -->
 
-            </div>
+            </main>
             {% endblock %}
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="footer sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Andson Queiroz, Paulo José e Ana Clara - 2025</span>

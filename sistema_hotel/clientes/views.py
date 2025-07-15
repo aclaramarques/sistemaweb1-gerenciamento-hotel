@@ -3,7 +3,7 @@ from .models import Hospede
 from .forms import HospedeForm
 
 def listar_hospedes(request):
-    hospedes = Hospede.objects.filter(ativo=True)
+    hospedes = Hospede.objects.all()
     return render(request, 'hospedes/listar.html', {'hospedes': hospedes})
 
 def cadastrar_hospede(request):
@@ -26,6 +26,5 @@ def editar_hospede(request, id):
 
 def deletar_hospede(request, id):
     hospede = get_object_or_404(Hospede, id=id)
-    hospede.ativo = False
-    hospede.save()
+    hospede.delete()
     return redirect('listar_hospedes')
