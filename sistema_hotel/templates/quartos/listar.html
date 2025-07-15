@@ -26,9 +26,9 @@
         <td>{{ quarto.capacidade }}</td>
         <td>{{ quarto.preco_diaria }}</td>
           {% if quarto.disponibilidade %}
-            <td>Disponível</td>
+            <td class="text-success">Disponível</td>
           {% else %}
-            <td>Indisponível</td>
+            <td class="text-danger">Indisponível</td>
           {% endif %}
         <td>
           <a href="{% url 'editar_quarto' quarto.id %}" class="btn btn-warning btn-sm">Editar</a>

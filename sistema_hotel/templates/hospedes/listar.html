@@ -12,6 +12,7 @@
       <tr>
         <th>Nome</th>
         <th>Telefone</th>
+        <th>Situação</th>
         <th>Ações</th>
       </tr>
     </thead>
@@ -20,6 +21,11 @@
       <tr>
         <td>{{ hospede.nome }}</td>
         <td>{{ hospede.telefone }}</td>
+          {% if hospede.ativo %}
+            <td class="text-success">Hóspede ativo</td>
+          {% else %}
+            <td class="text-danger">Hóspede não ativo</td>
+          {% endif %}
         <td>
           <a href="{% url 'editar_hospede' hospede.id %}" class="btn btn-warning btn-sm">Editar</a>
           <a href="{% url 'deletar_hospede' hospede.id %}" class="btn btn-danger btn-sm">Excluir</a>
