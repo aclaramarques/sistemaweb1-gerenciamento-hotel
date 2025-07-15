@@ -20,6 +20,13 @@ def editar_reserva(request, id):
 
 def deletar_reserva(request, id):
     reserva = get_object_or_404(Reserva, id=id)
+
+    reserva.hospede.ativo = False
+    reserva.hospede.save()
+
+    reserva.quarto.disponibilidade = True
+    reserva.quarto.save()
+
     reserva.delete()
     return redirect('listar_reservas')
 

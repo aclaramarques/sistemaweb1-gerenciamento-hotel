@@ -10,7 +10,7 @@ class Reserva(models.Model):
     dtEntrada = models.DateField()
     dtSaida = models.DateField()
     quantPessoas = models.PositiveIntegerField()
-    valor_total = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+    valor_total = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
 
     def calcular_total(self):
         dias = (self.dtSaida - self.dtEntrada).days
