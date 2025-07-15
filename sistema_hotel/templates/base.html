@@ -13,7 +13,7 @@
     <title>Gerenciador de Hotel</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css' %" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -86,6 +86,23 @@
                         <h6 class="collapse-header">Opções de quartos:</h6>
                         <a class="collapse-item" href="{% url 'cadastrar_quarto' %}">Cadastrar quarto</a>
                         <a class="collapse-item" href="{% url 'listar_quartos' %}">Listar quartos</a>
+                    </div>
+                </div>
+            </li>
+
+             <!-- Nav Item - Utilities Collapse Menu -->
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFuncionarios"
+                    aria-expanded="true" aria-controls="collapseFuncionarios">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Funcionários</span>
+                </a>
+                <div id="collapseFuncionarios" class="collapse" aria-labelledby="headingFuncionarios"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de quartos:</h6>
+                        <a class="collapse-item" href="{% url 'criar_funcionario' %}">Cadastrar funcionários</a>
+                        <a class="collapse-item" href="{% url 'listar_funcionarios' %}">Listar funcionários</a>
                     </div>
                 </div>
             </li>
