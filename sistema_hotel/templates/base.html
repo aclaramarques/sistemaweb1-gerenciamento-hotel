@@ -94,7 +94,7 @@
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFuncionarios"
                     aria-expanded="true" aria-controls="collapseFuncionarios">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fas fa-user-tie"></i> 
                     <span>Funcionários</span>
                 </a>
                 <div id="collapseFuncionarios" class="collapse" aria-labelledby="headingFuncionarios"
@@ -103,6 +103,23 @@
                         <h6 class="collapse-header">Opções de quartos:</h6>
                         <a class="collapse-item" href="{% url 'criar_funcionario' %}">Cadastrar funcionários</a>
                         <a class="collapse-item" href="{% url 'listar_funcionarios' %}">Listar funcionários</a>
+                    </div>
+                </div>
+            </li>
+
+             <!-- Nav Item - Utilities Collapse Menu -->
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServicos"
+                    aria-expanded="true" aria-controls="collapseServicos">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Serviços Adicionais</span>
+                </a>
+                <div id="collapseServicos" class="collapse" aria-labelledby="headingServicos"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opções de quartos:</h6>
+                        <a class="collapse-item" href="{% url 'criar_servico' %}">Cadastrar Serviços</a>
+                        <a class="collapse-item" href="{% url 'listar_servicos' %}">Visualizar Serviços</a>
                     </div>
                 </div>
             </li>

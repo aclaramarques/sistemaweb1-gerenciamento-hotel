@@ -1,16 +1,15 @@
+{% extends 'base.html' %}
 
-<div class="card-header d-flex justify-content-between align-items-center">
-    <h6 class="m-0 font-weight-bold text-primary">Serviços adicionais</h6>
-    <a href="{% url 'criar_servico' %}" class="btn btn-sm btn-success">
-      <i class="fas fa-plus"></i> Adicionar</a>
-  </div>
-  
-  <div class="card-body">
-    {% if servicos_adicionais %}
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
-        <thead class="thead-dark">
-          <tr>
+{% block content %}
+<div class="container-fluid">
+
+  <h1 class="h3 mb-4 text-gray-800">Serviços Cadastrados</h1>
+
+  <a href="{% url 'criar_servico' %}" class="btn btn-primary mb-3">Adicionar</a>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
             <th class="text-center">Tipo</th>
             <th class="text-center">Valor</th>
             <th class="text-center">Descrição</th>
@@ -34,16 +33,14 @@
               </div>
             </td>
           </tr>
-          {% endfor %}
-        </tbody>              
-      </table>
-    </div>
-    {% else %}
-    <p class="text-muted">Nenhum serviço cadastrado.</p>
-    {% endif %}
+          {% empty %}
+          <tr>
+            <td colspan="5">Nenhum quarto cadastrado.</td>
+          </tr>        
+        {% endfor %}
+      </tbody>              
+    </table>
   </div>
-
-</div>
-</div>
-</div>
-</div>
+{% endblock %}
+  
+  
