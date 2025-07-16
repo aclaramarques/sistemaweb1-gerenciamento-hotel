@@ -1,10 +1,10 @@
 Grupo:
-Ana Clara
-Andson
+Ana Clara,
+Andson,
 Paulo José
 ---------------------------------------------------------------------------------------------
 
-Link de apresentação do trabalho final de Web I: https://www.youtube.com/watch?v=cG7KcxsXAm8
+> Link de apresentação do trabalho final de Web I: https://www.youtube.com/watch?v=cG7KcxsXAm8
 ---------------------------------------------------------------------------------------------
 
 Como executar localmente:
@@ -15,7 +15,7 @@ Senha:123paulo456
 Usuário: paulo
 ---------------------------------------------------------------------------------------------
 
-O objetivo do trabalho foi desenvolver um sistema de gerenciamento de hotel capaz de executar algumas demandas administrativas de um ambiente hoteleiro. Essa ideia se deu pois pensamos em uma melhor experiência do clinete que deseja reservar algum quarto. Algumas das funções são criar quartos, reservas, hóspedes,entre outras. 
+> O objetivo do trabalho foi desenvolver um sistema de gerenciamento de hotel capaz de executar algumas demandas administrativas de um ambiente hoteleiro. Essa ideia se deu pois pensamos em uma melhor experiência do clinete que deseja reservar algum quarto. Algumas das funções são criar quartos, reservas, hóspedes,entre outras. 
 
 
 
